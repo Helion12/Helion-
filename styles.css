@@ -7,28 +7,32 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f4f4f4; /* Background color */
+    color: #333; /* Default text color */
+    line-height: 1.6;
 }
 
 h1, h2, h3 {
-    color: #d32f2f; /* Red for headings */
+    color: #d32f2f; /* Red color for headings */
 }
 
+/* Header */
 header {
-    background-color: #333;
-    padding: 10px;
+    background-color: #333; /* Dark background for header */
+    padding: 20px;
     text-align: left;
+    color: white;
 }
 
 header .logo img {
-    height: 50px;
+    height: 50px; /* Resize logo */
 }
 
-/* Hero Section */
+/* Hero Section (Top banner) */
 .hero {
     position: relative;
     text-align: center;
+    background-color: #f4f4f4;
 }
 
 .hero img {
@@ -45,21 +49,155 @@ header .logo img {
 }
 
 .hero h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 20px;
 }
 
 .cta-buttons .btn {
-    padding: 10px 20px;
-    margin: 10px;
+    padding: 15px 30px;
+    margin: 15px;
     background-color: #d32f2f;
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 .cta-buttons .btn:hover {
     background-color: #b71c1c;
+}
+
+/* Content Sections */
+section {
+    padding: 40px 20px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.about .text {
+    width: 60%;
+    font-size: 1.2em;
+}
+
+.about .text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about .text li {
+    margin-bottom: 10px;
+}
+
+.about .text h3 {
+    color: #d32f2f;
+}
+
+/* Service and Accounts Section */
+.services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.service-box {
+    width: 48%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+}
+
+.service-box img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.service-box h3 {
+    color: #d32f2f;
+    margin: 20px 0;
+}
+
+.service-box p {
+    font-size: 1em;
+}
+
+.service-box .btn {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #d32f2f;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.service-box .btn:hover {
+    background-color: #b71c1c;
+}
+
+/* Blog Section */
+.blog {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog h2 {
+    color: #d32f2f;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.blog-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.blog-item img {
+    width: 30%;
+    border-radius: 8px;
+}
+
+.blog-item .text {
+    width: 65%;
+    padding-left: 20px;
+}
+
+.blog-item h3 {
+    color: #d32f2f;
+}
+
+.blog-item .btn {
+    color: #d32f2f;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.blog-item .btn:hover {
+    color: #b71c1c;
 }
 
 /* Contact Page */
@@ -149,19 +287,6 @@ footer ul li a {
 
 footer ul li a:hover {
     text-decoration: underline;
-}
-
-/* Button Styling */
-.btn {
-    padding: 10px 20px;
-    background-color: #d32f2f;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    background-color: #b71c1c;
 }
 
 /* Chatbot */
