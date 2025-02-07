@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hélion Capital | Gestion d'Actifs en Tunisie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+    :root {
+        --primary: #D81324; /* Rouge Hélion */
+        --secondary: #0B2154; /* Bleu foncé */
+        --light: #F2F2F2;
+        --dark: #111111;
+    }
+
+    /* Intégration du CSS template avec adaptations */
+    .hero-section {
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('hero-bg.jpg');
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: white !important;
+        transition: .3s;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: var(--primary) !important;
+    }
+
+    .value-item {
+        background: var(--light);
+        padding: 2rem;
+        border-radius: 10px;
+        transition: .3s;
+    }
+
+    .value-item:hover {
+        transform: translateY(-10px);
+    }
+
+    .account-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: .3s;
+    }
+
+    .account-card:hover {
+        transform: scale(1.03);
+    }
+
+    .service-item {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    /* Ajouts spécifiques pour votre contenu */
+    .helion-primary-bg {
+        background-color: var(--primary);
+    }
+
+    .helion-secondary-text {
+        color: var(--secondary);
+    }
+    </style>
+    <link rel="stylesheet" href="template.css"> <!-- Votre fichier template -->
+</head>
+<body>
+    <!-- Navbar adaptée au template -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo-helion.png" alt="Logo" style="height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="offres.html">Nos Offres</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="comptes.html">Comptes</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="particuliers.html">Particuliers</a>
+                            <a class="dropdown-item" href="entreprises.html">Entreprises</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Hero adaptée -->
+    <div class="hero-section">
+        <div class="container text-center text-white">
+            <h1 class="display-4 mb-4">Bienvenue chez Hélion Capital</h1>
+            <p class="lead mb-5">Votre partenaire de confiance pour la gestion d'actifs en Tunisie</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="contact.html" class="btn btn-primary px-5 py-3">Contactez-nous</a>
+                <a href="comptes.html" class="btn btn-outline-light px-5 py-3">Vos comptes</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Valeurs avec icônes -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="value-item text-center">
+                        <i class="fas fa-shield-alt fa-3x mb-3 helion-secondary-text"></i>
+                        <h3 class="helion-secondary-text">Sécurité Maximale</h3>
+                        <p>Protection absolue de vos actifs</p>
+                    </div>
+                </div>
+                <!-- Ajouter les autres valeurs -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer adapté -->
+    <footer class="footer">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="logo-helion-white.png" alt="Logo" class="mb-3" style="height: 40px;">
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#" class="btn btn-social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- Ajouter les autres colonnes -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="template.js"></script> <!-- Fichiers JS du template -->
+</body>
+</html>
